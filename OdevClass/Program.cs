@@ -22,11 +22,11 @@ namespace OdevClass
             urun3.UrunAdi = "Bilgisayar";
             urun3.UrunMarkasi = "Lenovo";
 
-
+            //Array
             Urun[] urunler = new Urun[]{urun1, urun2, urun3};
 
             Console.WriteLine("----------------FOR------------");
-
+            //for döngüsü
             for (int i = 0; i < urunler.Length; i++)
             {
                 Console.WriteLine(urunler[i].Id + " " + urunler[i].UrunAdi +" "+ urunler[i].UrunMarkasi);
@@ -34,7 +34,7 @@ namespace OdevClass
             }
 
             Console.WriteLine("------------------------------");
-
+            //while döngüsü
             int x = 0;
             while(x<urunler.Length)
             {
@@ -43,7 +43,7 @@ namespace OdevClass
             }
 
             Console.WriteLine("---------------------------------");
-
+            //foreach döngüsü
             foreach (Urun urunList in urunler)
             {
                 Console.WriteLine(urunList.Id + " " + urunList.UrunAdi + " " + urunList.UrunMarkasi);
